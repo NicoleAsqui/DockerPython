@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  batch-proyecto:
+    container_name: contenedorProyecto
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    volumes:
+      - volumenproyecto:/batch-proyecto
+
+volumes:
+  volumenproyecto:
